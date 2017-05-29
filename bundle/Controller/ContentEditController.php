@@ -27,27 +27,27 @@ class ContentEditController extends Controller
     /**
      * @var ContentTypeService
      */
-    private $contentTypeService;
+    protected $contentTypeService;
 
     /**
      * @var ContentService
      */
-    private $contentService;
+    protected $contentService;
 
     /**
      * @var LocationService
      */
-    private $locationService;
+    protected $locationService;
 
     /**
      * @var ActionDispatcherInterface
      */
-    private $contentActionDispatcher;
+    protected $contentActionDispatcher;
 
     /**
      * @var string
      */
-    private $pagelayout;
+    protected $pagelayout;
 
     public function __construct(
         ContentTypeService $contentTypeService,
